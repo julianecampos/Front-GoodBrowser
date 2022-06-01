@@ -1,0 +1,8 @@
+<p>Categorias com mais avaliações</p>
+<div class=" ">
+    <div class="row">
+        <ul *ngFor="let item of listaCategorias" class="list-group mx-2 col-12">
+            <app-categoria [categoria]="item" [relatorio]="true"></app-categoria>
+        </ul>
+    </div>
+</div>

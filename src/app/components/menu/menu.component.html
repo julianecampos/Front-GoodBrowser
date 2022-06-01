@@ -1,0 +1,26 @@
+<nav class="navbar border-bottom">
+    <div class="navbar-expand">
+    </div>
+
+    <div class="navbar-expand">
+        <div class="navbar-nav justify-content-end">
+            <div class="nav-item">
+                <a role="button" style="cursor: pointer; color: black;" class="nav-link" routerLink="">Página inicial</a>
+            </div>
+            <div class="nav-item">
+                <a role="button" style="cursor: pointer; color: black;" class="nav-link" *ngIf="usuario.ehAdmin === 'true'"
+                    routerLink="/jogo-create">Cadastrar jogos</a>
+            </div>
+            <div class="nav-item">
+                <a role="button" style="cursor: pointer; color: black;" class="nav-link" routerLink="/jogo-read-recommend">Ver jogos
+                    recomendados</a>
+            </div>
+            <div class="nav-item">
+                <a role="button" style="cursor: pointer; color: black;" class="nav-link" routerLink="/relatorio">Relatório</a>
+            </div>
+            <div class="nav-item">
+                <a role="button" style="cursor: pointer; color: red;" class="nav-link" (click)="logout()">Sair</a>
+            </div>
+        </div>
+    </div>
+</nav>
