@@ -1,0 +1,12 @@
+.interna {
+    left: 50%;
+    top: 50%;
+    margin-left: -240px;
+    margin-top: -360px;
+    position: absolute;
+    width: 580px;
+    height: 470px;
+    background: white;
+    padding: 50px;
+    border-radius: 16px;
+}
